@@ -68,7 +68,7 @@ def main() -> None:
         return
 
     # Get Model Id
-    model_id = st.sidebar.selectbox("Model", options=["gpt-4o","ministral-8b-instruct-2410"])
+    model_id = st.sidebar.selectbox("Model", options=["gpt-4o","gpt-4o-mini"])
     # Set model_id in session state
     if "model_id" not in st.session_state:
         st.session_state["model_id"] = model_id

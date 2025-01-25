@@ -30,9 +30,9 @@ def get_example_agent(
         user_id=user_id,
         # The model to use for the agent
         model=OpenAIChat(
-            #id=model_id or agent_settings.gpt_4,
-            id="ministral-8b-instruct-2410",
-            base_url="http://host.docker.internal:1234/v1",
+            id=model_id or agent_settings.gpt_4,
+            # id="ministral-8b-instruct-2410",
+            # base_url="http://host.docker.internal:1234/v1",
         ),
         # Tools available to the agent
         tools=[DuckDuckGo()],
