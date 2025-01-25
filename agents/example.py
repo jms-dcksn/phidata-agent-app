@@ -6,7 +6,6 @@ from phi.knowledge.agent import AgentKnowledge
 from phi.storage.agent.postgres import PgAgentStorage
 from phi.tools.duckduckgo import DuckDuckGo
 from phi.vectordb.pgvector import PgVector, SearchType
-from phi.model.openai.like import OpenAILike
 
 from agents.settings import agent_settings
 from db.session import db_url
