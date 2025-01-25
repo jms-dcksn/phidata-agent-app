@@ -83,7 +83,7 @@ def main() -> None:
         logger.info(f"---*--- Creating {model_id} Agent ---*---")
         example_agent = get_example_agent(debug_mode=True)
         st.session_state["example_agent"] = example_agent
-        print("Agent retrieved " + str(example_agent.model.name))
+        print("Agent retrieved ")
     else:
         example_agent = st.session_state["example_agent"]
 
